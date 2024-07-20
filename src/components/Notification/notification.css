@@ -4,6 +4,7 @@
     border: 1px solid gray;
     border-radius: 10px;
     box-shadow: 10px 10px 10px lightgray;
+    margin-block: 1rem;
 }
 
 .id, .content {
@@ -16,7 +17,10 @@
 
 .delete-btn {
     background-color: lightgray;
+}
 
+.delete-btn:hover {
+    background-color: chocolate;
 }
 
 h4, p {
