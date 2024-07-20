@@ -4,9 +4,9 @@ const Notification = ({children}) => {
     return (
         <div className="container-notification">
             {children}
-            <h4 className="id">id</h4>
+            <h3 className="id">id</h3>
             <div className="content">
-                <h5 className="name">name</h5>
+                <h4 className="name">name</h4>
                 <p className="message">message</p>
             </div>
             <div className="container-btn">
