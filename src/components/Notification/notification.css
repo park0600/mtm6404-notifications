@@ -1,18 +1,25 @@
 .container-notification {
+    width: 100%;
+    max-width: 600px;
+    min-height: 50px;
     display: flex;
     align-items: center;
     border: 1px solid gray;
     border-radius: 10px;
     box-shadow: 10px 10px 10px lightgray;
     margin-block: 1rem;
+    margin-bottom: auto;
+    padding: 1.5rem;
+    box-sizing: border-box;
 }
 
-.id, .content {
-    padding-inline: 2rem;
+.content {
+    margin-right: 1rem;
+    flex: 1
 }
 
 .container-btn {
-    margin-inline: 0.5rem;
+    margin-left: auto;
 }
 
 .delete-btn {
@@ -26,8 +33,4 @@
 h4, p {
     margin: 0;
     text-align: left;
-}
-
-.container-btn {
-    margin-left: auto;
 }

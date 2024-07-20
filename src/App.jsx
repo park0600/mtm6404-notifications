@@ -8,24 +8,30 @@ function App() {
 
   const [displayNotifications, setDisplayNotifications] = useState(notifications)
 
-  const handle
+  function clearAll() {
+    setDisplayNotifications([])
+  }
+
+  function deleteOne(id){
+    setDisplayNotifications(displayNotifications.filter(notification => notification.id !== id))
+  }
 
   return (
     <>
-      <Title title="Notification Lists" />
-      <button>Clear All</button>
       <div className='container'>
-          {displayNotifications.map((notifi, index) => (
-            <Notification key={index}>
-                <div className="content">
-                    <h4 className="name">{notifi.name}</h4>
-                    <p className="message">{notifi.message}</p>
-                </div>
-                <div className="container-btn">
-                    <button className="delete-btn">Delete</button>
-                </div>
-            </Notification>
-          ))}
+      <Title title="Notification Lists" />
+      <button onClick={clearAll}>Clear All</button>
+      {displayNotifications.map((notifi, index) => (
+        <Notification key={index}>
+            <div className="content">
+                <h4 className="name">{notifi.name}</h4>
+                <p className="message">{notifi.message}</p>
+            </div>
+            <div className="container-btn">
+                <button onClick={() => {deleteOne(notifi.id)}} className="delete-btn">Delete</button>
+            </div>
+        </Notification>
+      ))}
       </div>
     </>
   )
