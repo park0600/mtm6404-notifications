@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import { Title } from "./components/Title"
-// import Notification from './components/Notification'
+import Notification from './components/Notification/Notification'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,9 +9,9 @@ function App() {
   return (
     <>
       <Title title="Notification Lists" />
-      {/* <div className='container'>
+      <div className='container'>
         <Notification></Notification>
-      </div> */}
+      </div>
     </>
   )
 }
