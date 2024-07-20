@@ -1,0 +1,28 @@
+.container-notification {
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.id, .content {
+    padding-inline: 2rem;
+}
+
+.container-btn {
+    margin-inline: 0.5rem;
+}
+
+.delete-btn {
+    background-color: lightgray;
+
+}
+
+h5, p {
+    margin: 0;
+    text-align: left;
+}
+
+.container-btn {
+    margin-left: auto;
+}
